@@ -1,0 +1,61 @@
+<div class="list">
+  <div class="col-md-8">
+    <div class="search">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Buscar por nome"
+        [(ngModel)]="name"
+      />
+      <div class="input-group-append">
+        <button
+          class="search-btn"
+          type="button"
+          (click)="searchName()"
+        >
+          Buscar
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="customerList">
+    <h4>LISTA DE CLIENTES</h4>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let client of clients; let i = index"
+        [class.active]="i == currentIndex"
+        (click)="setActiveClient(client, i)"
+      >
+        {{ client['name'] }}
+      </li>
+    </ul>
+
+    <button class="remove-btn" (click)="removeAllTutorials()">
+      Remover todos
+    </button>
+  </div>
+  <div class="listBox">
+    <div *ngIf="currentClient" class="listBoxDetails">
+      <h4>{{ currentClient['name'] }}</h4>
+      <div>
+        <label><strong>Nome:</strong></label>
+        {{ currentClient['name'] }}
+      </div>
+      <div>
+        <label><strong>CPF:</strong></label>
+        {{ currentClient['cpf'] }}
+      </div>
+      <div>
+        <label><strong>E-mail:</strong></label>
+        {{ currentClient['email'] }}
+      </div>
+
+      <a class="edit-btn" routerLink="/clients/{{ currentClient['id'] }}">
+        Editar
+      </a>
+    </div>
+
+      <p *ngIf="!currentClient">Por favor, selecione um cliente...</p>
+  </div>
+</div>

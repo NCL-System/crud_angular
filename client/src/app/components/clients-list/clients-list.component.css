@@ -1,0 +1,107 @@
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-control {
+  width: 500px;
+  height: 2rem;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid black;
+  outline: none;
+  padding-left: 10px;
+}
+
+.search-btn {
+  width: 70px;
+  height: 2rem;
+  border-radius: 0 10px 10px 0;
+  background: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.customerList {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.list-group-item {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.list-group-item:hover {
+  color: darkgrey;
+}
+
+.remove-btn {
+  padding: 10px 20px;
+  background: red;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: darkred;
+}
+
+.listBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.listBox > div > h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listBox > div {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 450px;
+  height: 250px;
+}
+
+.listBoxDetails {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  text-decoration: none;
+  color: white;
+  background: darkgreen;
+  height: 2rem;
+  border-radius: 10px;
+}
+
+.edit-btn:hover {
+  background: darkslategrey;
+}

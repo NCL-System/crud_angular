@@ -1,0 +1,59 @@
+.edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-form {
+  border: 1px solid black;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group {
+
+}
+
+.form-control {
+  margin: 10px;
+  width: 94%;
+  height: 2rem;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 200px;
+  color: white;
+  border: none;
+  height: 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 70%;
+}
+
+.blue {
+  background: dodgerblue;
+}
+
+.red {
+  background: red;
+}
+
